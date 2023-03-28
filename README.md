@@ -1,4 +1,4 @@
 # FE-Weather-Journal1
 
-#Deployed Application:
+# Deployed Application:
 ## https://git.heroku.com/fe-weather-journal1.git
