@@ -6,7 +6,7 @@ const express = require('express');
 // Start up an instance of app
 const app = express();
 
-const port = 3100;
+process.env.PORT = 3100;
 /* Middleware*/
 //Here we are configuring express to use body-parser as middle-ware.
 app.use(express.urlencoded({ extended: false }));
@@ -53,4 +53,4 @@ function listening() {
     console.log(`listening on port ${port}`);
 }
 
-app.listen(port, listening());
+app.listen(process.env.PORT || 3100, listening());
