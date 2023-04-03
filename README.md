@@ -29,6 +29,7 @@ node server.js
 
 ### Features
 Origianl app was designed to show a weather picture based on the temperature from the requested api data.
+updateWeatherPic()
 ```bash
 if (temppic < 32) {
         createDiv.innerHTML = `<img src="https://cdn1.vectorstock.com/i/1000x1000/51/20/cartoon-character-weather-forecast-sign-snow-cloud-vector-24545120.jpg">`;
@@ -40,9 +41,10 @@ if (temppic < 32) {
         createDiv.innerHTML = `<img src="https://img.favpng.com/4/12/0/cloud-drawing-euclidean-vector-sun-png-favpng-aYgfTuhntALzGJ1JTquJcbSjm.jpg">`;
     }
   ```
- ```bash
- Now this app is updated to show a weather picture from the OpenWeather API with the request based on the icon value of the requested weather data.
 
+ Now this app is updated to show a weather picture from the OpenWeather API with the request based on the icon value of the requested weather data.
+ updateWeatherPic()
+```bash
     let weathericon = data.icon;
 
     createDiv.innerHTML = `<img src=https://openweathermap.org/img/wn/${weathericon}@2x.png>`;
