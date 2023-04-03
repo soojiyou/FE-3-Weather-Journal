@@ -35,6 +35,18 @@ The user can:
 <img src="https://user-images.githubusercontent.com/79179847/229431947-cf481861-5c46-48f9-81bb-40b0261be9cd.png" alt="Image Description" width="500" >
 
 
+### Features
+
+1. Request weather information by entering a US zip code.
+2. Add current mood or feeling.
+
+![User interface for requesting weather information by US zip code and adding a feeling](https://user-images.githubusercontent.com/79179847/229431578-f2f19e11-09a6-4ca3-ba77-3948326d520e.png "User interface")
+
+3. Get detailed weather information from the API, including city name, date, Fahrenheit temperature, the user's added mood or feeling, and weather description.
+
+![Detailed weather information including city name, date, Fahrenheit temperature, feeling memo, and weather description](https://user-images.githubusercontent.com/79179847/229431947-cf481861-5c46-48f9-81bb-40b0261be9cd.png "Weather information")
+
+
 ### Updates
 Origianl app was designed to show a weather picture based on the temperature from the requested api data.
 updateWeatherPic()
