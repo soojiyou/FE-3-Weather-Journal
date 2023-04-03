@@ -39,7 +39,9 @@ The user can:
 
 #### API
 
-return the weather information from API: City name, Date, Fahrenheit temperature, the feeling memo the user added, weather description
+The API:
+
+    1. return the weather information from API: City name, Date, Fahrenheit temperature, the feeling memo the user added, weather description
 
 <img src="https://user-images.githubusercontent.com/79179847/229431947-cf481861-5c46-48f9-81bb-40b0261be9cd.png" alt="Image Description" width="500" >
 
