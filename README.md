@@ -50,6 +50,7 @@ The API:
 
 ## Updates
 Origianl app was designed to show a weather picture based on the temperature from the requested api data.
+
 updateWeatherPic()
 ```bash
 if (temppic < 32) {
@@ -64,6 +65,7 @@ if (temppic < 32) {
   ```
 
  Now this app is updated to show a weather picture from the OpenWeather API with the request based on the icon value of the requested weather data.
+ 
  updateWeatherPic()
 ```bash
     let weathericon = data.icon;
