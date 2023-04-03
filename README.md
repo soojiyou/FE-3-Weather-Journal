@@ -1,8 +1,7 @@
 # FE-Weather-Journal1
 
 ## Demo Website (Heroku)
-https://git.heroku.com/fe-weather-journal1.git // need redeploy
-
+https://fe-weather-journal1.herokuapp.com/
 
 ## Introduction
 This project is an asynchronous web app that uses Web API and user data to dynamically update the UI for a Weather-Journal App.
