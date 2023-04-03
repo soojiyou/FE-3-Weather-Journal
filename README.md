@@ -40,7 +40,8 @@ The user can:
 1. Request weather information by entering a US zip code.
 2. Add current mood or feeling.
 
-![User interface for requesting weather information by US zip code and adding a feeling](https://user-images.githubusercontent.com/79179847/229431578-f2f19e11-09a6-4ca3-ba77-3948326d520e.png "User interface")
+<img src="https://user-images.githubusercontent.com/79179847/229431578-f2f19e11-09a6-4ca3-ba77-3948326d520e.png" alt="User interface" width="400">
+
 
 3. Get detailed weather information from the API, including city name, date, Fahrenheit temperature, the user's added mood or feeling, and weather description.
 
