@@ -26,8 +26,14 @@ npm install
 ```bash
 node server.js
 ```
-
 ### Features
+The user can:
+    1. search the weather information by US zipcode.
+    2. add the today feeling.
+    3.
+
+
+### Updates
 Origianl app was designed to show a weather picture based on the temperature from the requested api data.
 updateWeatherPic()
 ```bash
@@ -50,3 +56,4 @@ if (temppic < 32) {
     createDiv.innerHTML = `<img src=https://openweathermap.org/img/wn/${weathericon}@2x.png>`;
 ```
  
+![image](https://user-images.githubusercontent.com/79179847/229430424-498a8499-59e0-4132-988f-7e41a20aeff8.png)
