@@ -28,9 +28,11 @@ node server.js
 ```
 ### Features
 The user can:
-    1. search the weather information by US zipcode.
+    1. request the weather information by US zipcode.
     2. add the today feeling.
-    3.
+    <img src="https://user-images.githubusercontent.com/79179847/229431578-f2f19e11-09a6-4ca3-ba77-3948326d520e.png" alt="Image Description" width="500" >
+    3. get the weather information from API: City name, Date, Fahrenheit temperature, the feeling memo the user added, weather description
+    <img src="https://user-images.githubusercontent.com/79179847/229431947-cf481861-5c46-48f9-81bb-40b0261be9cd.png" alt="Image Description" width="500" >
 
 
 ### Updates
@@ -55,10 +57,5 @@ if (temppic < 32) {
 
     createDiv.innerHTML = `<img src=https://openweathermap.org/img/wn/${weathericon}@2x.png>`;
 ```
-<img src="https://user-images.githubusercontent.com/79179847/229431578-f2f19e11-09a6-4ca3-ba77-3948326d520e.png" alt="Image Description" width="500" >
-
-
-<img src="https://user-images.githubusercontent.com/79179847/229431947-cf481861-5c46-48f9-81bb-40b0261be9cd.png" alt="Image Description" width="500" >
-
 
 
