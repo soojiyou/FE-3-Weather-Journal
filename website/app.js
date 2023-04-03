@@ -2,12 +2,11 @@
 const zip = document.getElementById('zip');
 const feelings = document.getElementById('feelings');
 const generate = document.getElementById('generate');
-const key = "&appid=ec700b8387676a0dc3b3ac989505350a&units=imperial";
+const key = "ec700b8387676a0dc3b3ac989505350a";
 const date = document.getElementById('date');
 const temp = document.getElementById('temp');
 const content = document.getElementById('content');
 const baseURI = "https://api.openweathermap.org/data/2.5/weather?zip=";
-const requestForm = "https://api.openweathermap.org/data/2.5/weather?zip={zip code},{country code}&appid={API key}";
 const city = document.getElementById('city');
 const weather = document.getElementById('weather');
 
@@ -40,6 +39,7 @@ const selectData = async (data) => {
             content: feelings.value,
             city: data.name,
             weather: data.weather[0].description,
+            icon: data.weather[0].icon,
         };
         return weatherresult;
 
@@ -82,6 +82,9 @@ const searchAndUpdateData = async () => {
     }
 }
 
+/*
+*updateWeatherPic based on temp value* => changed to get image from server based on icon in data.
+
 const updateWeatherPic = async () => {
     const request = await fetch('/result');
     const weatherData = await request.json();
@@ -101,12 +104,27 @@ const updateWeatherPic = async () => {
         createDiv.innerHTML = `<img src="https://img.favpng.com/4/12/0/cloud-drawing-euclidean-vector-sun-png-favpng-aYgfTuhntALzGJ1JTquJcbSjm.jpg">`;
     }
 }
+*/
+
+const updateWeatherPic = async () => {
+    const request = await fetch('/result');
+    const data = await request.json();
+    let weathericon = data.icon;
+    // let temppic = Math.round(data.temp);
+    const createDiv = document.createElement('div');
+    const divforpic = document.getElementById('weatherpic');
+    createDiv.setAttribute("class", "card");
+    divforpic.appendChild(createDiv);
+    createDiv.innerHTML = `<img src=https://openweathermap.org/img/wn/${weathericon}@2x.png>`;
+}
+
+
 
 generate.addEventListener("click", serverActionStep);
 
 function serverActionStep(event) {
     event.preventDefault();
-    const requestURL = `${baseURI}${zip.value},${key}`;
+    const requestURL = `${baseURI}${zip.value}&appid=${key}&units=imperial`;
     requestData(requestURL)
         .then((data) => {
             selectData(data)
@@ -115,7 +133,7 @@ function serverActionStep(event) {
                         .then((data) => {
                             searchAndUpdateData("/result")
                                 .then((data) => {
-                                    updateWeatherPic("/result")
+                                    updateWeatherPic();
                                 });
 
 

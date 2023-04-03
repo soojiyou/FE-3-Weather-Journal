@@ -5,7 +5,7 @@ let projectData = {};
 const express = require('express');
 // Start up an instance of app
 const app = express();
-const PORT = process.env.PORT || 3100;
+const PORT = process.env.PORT || 3101;
 /* Middleware*/
 //Here we are configuring express to use body-parser as middle-ware.
 app.use(express.urlencoded({ extended: false }));
@@ -25,15 +25,8 @@ app.post('/add', addData);
 
 async function addData(request, response) {
 
-    let data = await request.body;
-
-    projectData["date"] = data.date;
-    projectData["temp"] = data.temp;
-    projectData["content"] = data.content;
-    projectData["city"] = data.city;
-    projectData["weather"] = data.weather;
-
-
+    const { date, temp, content, city, weather, icon } = request.body;
+    projectData = { date, temp, content, city, weather, icon };
     response.send(projectData);
 }
 
