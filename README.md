@@ -25,8 +25,8 @@ npm install
 ```bash
 node server.js
 ```
-### Features
-#### User
+## Features
+### User
 
 The user can:
 
@@ -36,7 +36,7 @@ The user can:
     
 <img src="https://user-images.githubusercontent.com/79179847/229431578-f2f19e11-09a6-4ca3-ba77-3948326d520e.png" alt="Image Description" width="500" >
 
-#### API
+### API
 
 The API:
 
@@ -48,7 +48,7 @@ The API:
 
 
 
-### Updates
+## Updates
 Origianl app was designed to show a weather picture based on the temperature from the requested api data.
 updateWeatherPic()
 ```bash
