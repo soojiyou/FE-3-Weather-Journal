@@ -55,6 +55,6 @@ if (temppic < 32) {
 
     createDiv.innerHTML = `<img src=https://openweathermap.org/img/wn/${weathericon}@2x.png>`;
 ```
-<img src="https://user-images.githubusercontent.com/79179847/229430424-498a8499-59e0-4132-988f-7e41a20aeff8.png" alt="Image Description" width="500" >
+<img src="https://user-images.githubusercontent.com/79179847/229431578-f2f19e11-09a6-4ca3-ba77-3948326d520e.png" alt="Image Description" width="500" >
 
 
