@@ -6,7 +6,7 @@ https://fe-weather-journal1.herokuapp.com/
 ## Introduction
 This project is an asynchronous web app that uses Web API and user data to dynamically update the UI for a Weather-Journal App.
 
-### Tech Used
+## Technologies Used
 
 Vanilla JS - Programming language (Plain Javascript)
 Express - Server-side web application framework for Node.js
