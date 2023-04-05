@@ -9,8 +9,11 @@ This project is an asynchronous web app that uses Web API and user data to dynam
 ### Technologies Used
 
 Vanilla JS - Programming language (Plain Javascript)
+
 Express - Server-side web application framework for Node.js
+
 Sass - css preprocessor
+
 Node.js - Server-side JavaScript runtime environment
 
 
