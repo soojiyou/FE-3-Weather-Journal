@@ -31,7 +31,8 @@ Install Requirements with the following command:
 ```bash
 npm install
 ```
-### Running Local Tests
+
+Start application with the following command:
 ```bash
 node server.js
 ```
@@ -54,7 +55,7 @@ The API:
     
 <img src="https://user-images.githubusercontent.com/79179847/229431947-cf481861-5c46-48f9-81bb-40b0261be9cd.png" alt="Image Description" width="500" >
 
-
+    2. Weather information is available for historical and future 10 days.
 
 
 
