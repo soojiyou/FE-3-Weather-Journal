@@ -1,4 +1,4 @@
-# FE-Weather-Journal1
+# Frontend Project 3 - Weather-Journal (Udacity)
 
 ## Demo Website (Heroku)
 https://fe-weather-journal1.herokuapp.com/
